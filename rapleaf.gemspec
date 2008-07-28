@@ -9,10 +9,10 @@ Gem::Specification.new do |s|
 
   s.require_path = 'lib'
 
-  # get this easily and accurately by running 'Dir.glob("{lib,spec}/**/*")'
+  # get this easily and accurately by running 'Dir.glob("{lib,spec,examples}/**/*")'
   # in an IRB session.  However, GitHub won't allow that command hence
   # we spell it out.
-  s.files = ["README.rdoc", "LICENSE", "CHANGELOG", "Rakefile", "lib/rapleaf", "lib/rapleaf/exceptions.rb","lib/rapleaf/rapleaf.rb", "lib/rapleaf/responses.rb", "lib/rapleaf.rb"]
+  s.files = ["README.rdoc", "LICENSE", "CHANGELOG", "Rakefile", "examples/person.rb", "lib/rapleaf", "lib/rapleaf/exceptions.rb","lib/rapleaf/rapleaf.rb", "lib/rapleaf/responses.rb", "lib/rapleaf.rb"]
 
   s.test_files = []
 
