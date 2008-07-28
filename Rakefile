@@ -11,8 +11,9 @@ Rake::GemPackageTask.new(spec) do |pkg|
   pkg.gem_spec = spec
 end
 
+desc "Build and install the gem locally."
 task :install => [:package] do
-  sh %{sudo gem install pkg/#{GEM}-#{VERSION}}
+  sh %{sudo gem install pkg/rapleaf-#{VER}}
 end
 
 Rake::TestTask.new do |t|
