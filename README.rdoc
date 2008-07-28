@@ -1,21 +1,23 @@
-Rapleaf Ruby API
---
+= Rapleaf Ruby Gem Library
 
-RAPLEAF
+= Rapleaf
 
-Rapleaf’s goal is to make the internet safe and transparent, by allowing you
+Rapleaf's goal is to make the internet safe and transparent, by allowing you
 to evaluate your web footprint across a variety of user-generated sites.
 See http://www.rapleaf.com for more information.
 
 
-REQUIREMENTS
+= Installation
 
-1. Builder. http://rubyforge.org/projects/builder/
+Install as a Ruby Gem with:
 
-This can be installed using RubyGems with the command "sudo gem install builder".
+  Update to RubyGems 1.2.0 before proceeding!!
+
+  gem sources -a http://gems.github.com (you only have to do this once)
+  sudo gem install grempe-rapleaf
 
 
-EXAMPLES
+= Examples
 
 In order to use this API, you will need to get an API Key from Rapleaf. These
 can be obtained free at http://www.rapleaf.com/.
@@ -28,7 +30,8 @@ To run any of the examples, simply run it like:
   cd examples
   ruby person.rb
 
-HISTORY
+
+= History & Contributing
 
 This library was inspired by the sample code provided by Rapleaf at:
 

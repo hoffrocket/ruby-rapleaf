@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/../lib/Rapleaf'
+require File.dirname(__FILE__) + '/../lib/rapleaf'
 
 # Instanciate a Rapleaf object with your API Key.
 @rapleaf = Rapleaf::Base.new('REPLACE_WITH_YOUR_API_KEY')
