@@ -1,0 +1,42 @@
+Rapleaf Ruby API
+--
+
+RAPLEAF
+
+Rapleaf’s goal is to make the internet safe and transparent, by allowing you
+to evaluate your web footprint across a variety of user-generated sites.
+See http://www.rapleaf.com for more information.
+
+
+REQUIREMENTS
+
+1. Builder. http://rubyforge.org/projects/builder/
+
+This can be installed using RubyGems with the command "sudo gem install builder".
+
+
+EXAMPLES
+
+In order to use this API, you will need to get an API Key from Rapleaf. These
+can be obtained free at http://www.rapleaf.com/.
+
+You will need to put your API Key in the examples/person.rb file or the
+examples will fail.
+
+To run any of the examples, simply run it like:
+
+  cd examples
+  ruby person.rb'
+
+HISTORY
+
+This library was inspired by the sample code provided by Rapleaf at:
+
+http://trac.rapleaf.com/ruby-api-kit/wiki
+
+The code was extensively re-written so it would work with the current
+Rapleaf v2 API and is provided for your use.  Sorry that no support
+for this library is available.  However, Git pull requests/patches
+are accepted.
+
+
