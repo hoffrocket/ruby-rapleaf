@@ -26,7 +26,7 @@ examples will fail.
 To run any of the examples, simply run it like:
 
   cd examples
-  ruby person.rb'
+  ruby person.rb
 
 HISTORY
 
