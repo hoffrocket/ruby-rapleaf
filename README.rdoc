@@ -39,7 +39,7 @@ http://trac.rapleaf.com/ruby-api-kit/wiki
 
 The code was extensively re-written so it would work with the current
 Rapleaf v2 API and is provided for your use.  Sorry that no support
-for this library is available.  However, Git pull requests/patches
+for this library is currently available.  However, Git pull requests/patches
 are accepted.
 
 http://github.com/grempe/rapleaf
