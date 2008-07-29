@@ -1,3 +1,4 @@
+require 'rubygems'
 require File.dirname(__FILE__) + '/../lib/rapleaf'
 
 # Instanciate a Rapleaf object with your API Key.
