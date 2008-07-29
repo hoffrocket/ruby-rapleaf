@@ -1,8 +1,7 @@
-VER = "0.1.0"
 
 Gem::Specification.new do |s|
   s.name = "rapleaf"
-  s.version = VER
+  s.version = "0.1.1"
   s.author = "Glenn Rempe"
   s.email = "glenn@rempe.us"
   s.homepage = "http://github.com/grempe/rapleaf/"

@@ -13,7 +13,7 @@ end
 
 desc "Build and install the gem locally."
 task :install => [:package] do
-  sh %{sudo gem install pkg/rapleaf-#{VER}}
+  sh %{sudo gem install pkg/rapleaf-*}
 end
 
 Rake::TestTask.new do |t|
