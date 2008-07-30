@@ -1,7 +1,6 @@
-
 Gem::Specification.new do |s|
   s.name = "rapleaf"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
   s.author = "Glenn Rempe"
   s.email = "glenn@rempe.us"
   s.homepage = "http://github.com/grempe/rapleaf/"
