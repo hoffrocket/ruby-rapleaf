@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.author = "Glenn Rempe"
   s.email = "glenn@rempe.us"
   s.homepage = "http://github.com/grempe/rapleaf/"
-  s.summary = "A Ruby gem library for accessing the rapleaf.com API"
+  s.summary = "A Ruby gem for using the rapleaf.com API"
   s.description = s.summary
 
   s.require_path = 'lib'
