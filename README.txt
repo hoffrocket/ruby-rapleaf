@@ -51,8 +51,15 @@ Install as a Ruby Gem with:
   Update to RubyGems 1.2.0 before proceeding!!
 
   gem sources -a http://gems.github.com (you only have to do this once)
-  sudo gem install grempe-rapleaf
 
+  sudo gem install grempe-ruby-rapleaf
+
+  # OR
+
+  git clone git://github.com/grempe/ruby-rapleaf.git
+  cd ruby-rapleaf
+  rake gem
+  rake install_gem
 
 == LICENSE:
 
