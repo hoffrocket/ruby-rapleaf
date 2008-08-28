@@ -1,30 +1,28 @@
+# -*- ruby -*-
+
 require 'rubygems'
-require 'rake/gempackagetask'
-require 'rake/testtask'
-require 'rake/rdoctask'
+require 'hoe'
+require './lib/ruby-rapleaf.rb'
 
-# read the contents of the gemspec, eval it, and assign it to 'spec'
-# this lets us maintain all gemspec info in one place.  Nice and DRY.
-spec = eval(IO.read("rapleaf.gemspec"))
-
-Rake::GemPackageTask.new(spec) do |pkg|
-  pkg.gem_spec = spec
+Hoe.new('ruby-rapleaf', Rapleaf::VERSION) do |p|
+  p.rubyforge_name = 'ruby-rapleaf' # if different than lowercase project name
+  p.developer('Glenn Rempe', 'glenn@rempe.us')
+  p.extra_deps = [['xml-simple', '>= 1.0.11'], ['builder', '>= 2.1.2']]
 end
 
-desc "Build and install the gem locally."
-task :install => [:package] do
-  sh %{sudo gem install pkg/rapleaf-*}
+namespace :manifest do
+  desc 'Recreate Manifest.txt to include ALL files'
+  task :refresh do
+    `rake check_manifest | patch -p0 > Manifest.txt`
+  end
 end
 
-Rake::TestTask.new do |t|
-  t.libs << "test"
-  t.test_files = FileList['test/test*.rb']
-  t.verbose = true
+namespace :gemspec do
+  desc 'Refresh the gemspec file'
+  task :refresh do
+    `rake debug_gem > ruby-rapleaf.gemspec`
+    # remove the first line from the file which is an artifact of the gemspec generation
+    `perl -pi -e '$_ = "" if ($. == 1);' ruby-rapleaf.gemspec`
+  end
 end
 
-Rake::RDocTask.new do |rd|
-  rd.main = "README.rdoc"
-  rd.rdoc_files.include("README.rdoc", "lib/**/*.rb")
-  rd.rdoc_dir = 'doc'
-  rd.options = spec.rdoc_options
-end
