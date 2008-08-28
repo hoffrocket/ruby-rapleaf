@@ -4,7 +4,6 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Glenn Rempe"]
-  s.cert_chain = ["/Users/glenn/.gem/gem-public_cert.pem"]
   s.date = %q{2008-08-27}
   s.description = %q{Rapleaf's goal is to make the internet safe and transparent, by allowing you to evaluate your web footprint across a variety of user-generated sites. See http://www.rapleaf.com for more information.}
   s.email = ["glenn@rempe.us"]
@@ -16,7 +15,6 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{ruby-rapleaf}
   s.rubygems_version = %q{1.2.0}
-  s.signing_key = %q{/Users/glenn/.gem/gem-private_key.pem}
   s.summary = %q{Rapleaf's goal is to make the internet safe and transparent, by allowing you to evaluate your web footprint across a variety of user-generated sites}
 
   if s.respond_to? :specification_version then
