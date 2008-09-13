@@ -2,9 +2,9 @@ require 'rubygems'
 require File.dirname(__FILE__) + '/../lib/ruby-rapleaf'
 
 # Instanciate a Rapleaf object with your API Key.
-@rapleaf = Rapleaf::Base.new('REPLACE_WITH_YOUR_API_KEY')
+@rapleaf = Rapleaf::Base.new('KEY')
 
-@person = @rapleaf.person(:email => 'dummy@rapleaf.com')
+@person = @rapleaf.person(:email => ARGV[0])
 
 puts "\n\n"
 puts "BASICS"
@@ -22,12 +22,10 @@ puts "\n@person.basics.location:"
 puts @person.basics.location
 
 puts "\n@person.basics.occupations:"
-if @person.basics.occupations
+if @person.basics.occupations                                  
   @person.basics.occupations.each do |occupation|
-    puts "occupation.job_title"
-    puts occupation.job_title
-    puts "occupation.company"
-    puts occupation.company
+    puts "occupation"
+    puts occupation
   end
 end
 
